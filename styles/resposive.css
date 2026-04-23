@@ -1,10 +1,43 @@
 @media (max-width: 1300px) {}
 
-@media (min-width: 371px) and (max-width: 1300px) {}
+@media (min-width: 371px) and (max-width: 992px) {
+    #Home .navbar .navbar-collapse {
+        padding-block: 15px;
+        margin-top: 25px;
+        border-radius: 15px;
+    }
+    #Home .navbar .navbar-collapse .navbar-nav {
+        display: block;
+        text-align: center;
+    }
+    #Home .navbar .navbar-collapse .nav-link .middle-text {
+        width: 100%;
+        display: block;
+        height: 17px;
+        background-color: rgba(var(--bs-success-rgb));
+        top: 50%;
+        left: 100%;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: 1;
+        transition-duration: 1s;
+    }
+    #Home .navbar .navbar-collapse a {
+        border-radius: 10px;
+    }
+    #Home .navbar .container {
+        padding-inline: 25px;
+        position: relative;
+    }
+    #Home .navbar .container .navbar-brand {
+        position: relative;
+        width: 10%;
+    }
+}
 
 @media (min-width: 577px) and (max-width: 1300px) {}
 
-@media (min-width: 769px) and (max-width: 1300px) {}
+@media (min-width: 769px) and (max-width: 992px) {}
 
 @media (min-width: 992px) and (max-width: 1300px) {
     #Home .navbar .navbar-collapse {

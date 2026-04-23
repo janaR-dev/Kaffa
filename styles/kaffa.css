@@ -140,7 +140,7 @@
     width: 100%;
 }
 
-#Home .navbar .container-fluid {
+#Home .navbar .container {
     margin-inline: 50px;
 }
 
@@ -162,6 +162,12 @@
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 2px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+#Home .navbar .navbar-collapse .navbar-nav {
+    text-align: center;
 }
 
 #Home .navbar .navbar-collapse .nav-link {
@@ -180,8 +186,6 @@
     right: 100%;
     position: absolute;
     z-index: 1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     transition-duration: 1s;
 }
 
@@ -212,8 +216,6 @@
     right: 100%;
     position: absolute;
     z-index: 1;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     transition-duration: 1s;
 }
 
