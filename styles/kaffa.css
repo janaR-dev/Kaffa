@@ -1,0 +1,610 @@
+#Home .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+}
+
+#Home .carousel-item::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: block;
+}
+
+#Home .carousel-item:nth-of-type(1) {
+    background-image: url(images_Kaffa/images/banner1.jpg);
+}
+
+#Home .carousel-item:nth-of-type(2) {
+    background-image: url(images_Kaffa/images/banner2.jpg);
+}
+
+#Home .carousel-item:nth-of-type(3) {
+    background-image: url(images_Kaffa/images/banner3.jpg);
+}
+
+#Home .carousel-item:nth-of-type(4) {
+    background-image: url(images_Kaffa/images/banner4.jpg);
+}
+
+#Home .carousel-item .caption-container {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 85%;
+    display: flex;
+}
+
+#Home .carousel-item .caption1 {
+    margin: auto;
+    text-align: start;
+}
+
+#Home .carousel-item .caption1 h3 {
+    font-size: 50px;
+    transition-duration: .8s;
+}
+
+#Home .carousel-item .caption1 h3,
+#Home .carousel-item .caption1 p,
+#Home .carousel-item .caption1 a {
+    padding: 0%;
+    transform: translateY(-40%);
+    opacity: 0;
+}
+
+#Home .carousel-item .caption1 p {
+    transition-duration: 1s;
+}
+
+#Home .carousel-item .caption1 a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    padding-block: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    position: absolute;
+    transition-duration: 1.2s;
+    overflow: hidden;
+}
+
+#Home .carousel-item .caption1 a:nth-of-type(2) {
+    left: 120px;
+}
+
+#Home .carousel-item .caption1 a::before,
+#Home .carousel-item .caption1 a::after {
+    content: "";
+    display: block;
+    border: 20px solid;
+    height: 40px;
+    width: 110px;
+    position: absolute;
+    top: 0;
+    transition-duration: 1s;
+}
+
+#Home .carousel-item .caption1 a span {
+    transition-duration: 1s;
+    position: relative;
+    z-index: 1;
+}
+
+#Home .carousel-item .caption1 a::before {
+    left: 100%;
+    border-left-color: transparent;
+}
+
+#Home .carousel-item .caption1 a::after {
+    right: 100%;
+    border-right-color: transparent;
+}
+
+#Home .carousel-item .caption1 a:hover::before {
+    left: 0;
+}
+
+#Home .carousel-item .caption1 a:hover::after {
+    right: 0;
+}
+
+#Home .carousel-item .caption1 a:hover span {
+    color: #ffffff;
+}
+
+#Home .carousel-item.active .caption1 h3,
+#Home .carousel-item.active .caption1 p,
+#Home .carousel-item.active .caption1 a {
+    padding: 0%;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+#Home .carousel-item .caption1 p {
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    font-weight: 250;
+    width: 85%;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+#Home .navbar {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Home .navbar .container-fluid {
+    margin-inline: 50px;
+}
+
+#Home .navbar .navbar-collapse {
+    background-color: var( --bs-dark-text-emphasis);
+}
+
+#Home .navbar .navbar-toggler {
+    color: rgba(var(--bs-success-rgb), var(--bs-border-opacity));
+}
+
+#Home .navbar .navbar-toggler i {
+    margin-block: 5px;
+}
+
+#Home .navbar .navbar-collapse a {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#Home .navbar .navbar-collapse .nav-link {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#Home .navbar .navbar-collapse .nav-link .left-text {
+    width: 100%;
+    display: block;
+    height: 15px;
+    background-color: rgba(var(--bs-success-rgb));
+    top: 1%;
+    right: 100%;
+    position: absolute;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition-duration: 1s;
+}
+
+#Home .navbar .navbar-collapse .nav-link .text {
+    position: relative;
+    z-index: 3;
+}
+
+#Home .navbar .navbar-collapse .nav-link .middle-text {
+    width: 100%;
+    display: block;
+    height: 15px;
+    background-color: rgba(var(--bs-success-rgb));
+    top: 50%;
+    left: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+#Home .navbar .navbar-collapse .nav-link .bottom-text {
+    width: 100%;
+    display: block;
+    height: 15px;
+    background-color: rgba(var(--bs-success-rgb));
+    bottom: 1%;
+    right: 100%;
+    position: absolute;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition-duration: 1s;
+}
+
+#Home .navbar .navbar-collapse .nav-link:hover .bottom-text,
+#Home .navbar .navbar-collapse .nav-link:hover .left-text {
+    right: 0;
+}
+
+#Home .navbar .navbar-collapse .nav-link:hover .middle-text {
+    left: 0%;
+}
+
+#Home .navbar .navbar-collapse ul li {
+    margin: auto;
+}
+
+#About,
+#Menu {
+    background-image: url(images_Kaffa/images/leaves_pattern.png);
+    background-color: var(--bs-success);
+}
+
+#About .about button {
+    position: relative;
+    overflow: hidden;
+}
+
+#About .about button .txt {
+    position: relative;
+    font-size: 20px;
+}
+
+#About .about button .txt {
+    transition-duration: .5s;
+}
+
+#About .about button .top {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    transition-duration: .5s;
+}
+
+#About .about button .bottom {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 100%;
+    height: 100%;
+    left: 0%;
+    transition-duration: .5s;
+}
+
+#About .about button:hover .bottom {
+    top: 50%;
+}
+
+#About .about button:hover .top {
+    bottom: 50%;
+}
+
+#About .about button:hover .txt {
+    color: rgba(var(--bs-success-rgb));
+}
+
+#About .container .cards .row .item .AboutCard {
+    position: relative;
+}
+
+#About .container .cards .row .item .AboutCard .front {
+    backface-visibility: hidden;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#About .container .cards .row .item:nth-of-type(1) .AboutCard .front {
+    background-image: url(images_Kaffa/images/about_front_01.jpg);
+}
+
+#About .container .cards .row .item:nth-of-type(2) .AboutCard .front {
+    background-image: url(images_Kaffa/images/about_front_02.jpg);
+}
+
+#About .container .cards .row .item:nth-of-type(3) .AboutCard .front {
+    background-image: url(images_Kaffa/images/about_front_03.jpg);
+}
+
+#About .container .cards .row .item .AboutCard .back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+}
+
+#About .container .cards .row .item .AboutCard:hover .front {
+    transform: rotateY(180deg);
+}
+
+#About .container .cards .row .item .AboutCard:hover .back {
+    transform: rotateY(0deg);
+}
+
+#About .container .cards .row .item:nth-of-type(1) .AboutCard .back {
+    background-color: #404042;
+}
+
+#About .container .cards .row .item:nth-of-type(2) .AboutCard .back {
+    background-color: #87744a;
+}
+
+#About .container .cards .row .item:nth-of-type(3) .AboutCard .back {
+    background-color: #6d1f37;
+}
+
+#About .container .cards .row .item .AboutCard .back a {
+    color: #fff;
+    border: 1px solid white;
+    background-color: transparent;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    transition-duration: .5s;
+    font-weight: 100;
+}
+
+#About .container .cards .row .item .AboutCard .back a:hover {
+    font-weight: 400;
+    background-color: #fff;
+}
+
+#About .container .cards .row .item:nth-of-type(1) .AboutCard .back a:hover {
+    color: #404042;
+}
+
+#About .container .cards .row .item:nth-of-type(2) .AboutCard .back a:hover {
+    color: #87744a;
+}
+
+#About .container .cards .row .item:nth-of-type(3) .AboutCard .back a:hover {
+    color: #6d1f37;
+}
+
+#About .container .cards .row .item .AboutCard .back a:hover i {
+    transition-duration: .5s;
+}
+
+#About .container .cards .row .item .AboutCard .back a:hover i {
+    margin-left: 2px;
+}
+
+#About .container .cards .row .item .AboutCard .back p {
+    font-size: 12px;
+}
+
+#Services {
+    background-image: url("images_Kaffa/images/beans_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Services:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #0009;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#Services .container {
+    position: relative;
+    z-index: 2;
+}
+
+#Services .container .row i {
+    color: rgba(var(--bs-success-rgb));
+    font-size: 40px;
+}
+
+#Services .container .row h3 {
+    color: white;
+}
+
+#Services .container .row p {
+    color: #c2c2c2;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+#Services .SerPart2 img {
+    animation-name: animate1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#Menu .nav-tabs {
+    width: fit-content;
+}
+
+#Menu .nav-tabs .nav-link {
+    color: #fff;
+}
+
+#Menu .nav-tabs .nav-item .active,
+#Menu .nav-tabs .nav-link:hover {
+    color: rgba(var(--bs-success-rgb));
+    background-color: #fff;
+}
+
+#Menu .tab-pane .item {
+    transform: scale(0);
+    transition-duration: 1s;
+}
+
+#Menu .tab-pane.show .item {
+    transform: scale(1);
+}
+
+#Menu .item img {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#Menu .item:hover img {
+    transform: scale(1.1);
+}
+
+#Menu h6 {
+    top: 10px;
+}
+
+#Menu p {
+    bottom: 20px;
+}
+
+#Menu h6,
+#Menu p {
+    background-image: url(../styles/images_Kaffa/images/leaves_pattern.png);
+    background-color: var(--bs-success);
+    color: #fff;
+    padding: 5px;
+    border-radius: 0px 20px 20px 0px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#Menu .item:hover h6,
+#Menu .item:hover p {
+    transform: translateX(0%);
+}
+
+#Video {
+    background-image: url(../styles/images_Kaffa/images/ice_drinks_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Video::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #362d2799;
+}
+
+#Video .modal-dialog {
+    max-width: 800px;
+}
+
+#Video .modal-content video {
+    position: relative;
+    display: flex;
+}
+
+#Video h3 {
+    font-size: 50px;
+    text-shadow: 1.5px 1.5px 1px #362d27;
+}
+
+#Video h2 {
+    font-size: 55px;
+    margin-block: 20px;
+}
+
+#Video a {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+#Video a:hover {
+    color: rgba(var(--bs-success-rgb));
+}
+
+#Video a i {
+    font-size: 100px;
+}
+
+#Book {
+    background-image: url("images_Kaffa/images/black-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Book .content {
+    background-image: url("images_Kaffa/images/girl.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left bottom;
+    min-height: 100vh;
+}
+
+#Book form {
+    background-image: url("images_Kaffa/images/leaves_pattern.png");
+    background-color: rgba(var(--bs-success-rgb));
+    border-radius: 10px;
+    margin-left: auto;
+    width: 50%;
+}
+
+#Book form .input-group,
+#Book form .row button {
+    width: 80%;
+    margin: auto;
+}
+
+#Book form textarea {
+    resize: none;
+}
+
+#Book form button {
+    border: 1px solid rgba(var(--bs-success-rgb));
+}
+
+#Book form button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--bs-success-rgb));
+    z-index: 1;
+    transition-duration: .5s;
+}
+
+#Book form button span {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 2;
+}
+
+#Book form button:hover:after {
+    bottom: 0%;
+}
+
+#Book form button:hover {
+    border: 1px solid #fff;
+}

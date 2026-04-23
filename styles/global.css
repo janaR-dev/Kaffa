@@ -1,0 +1,38 @@
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+html {
+    background-color: rgba(var(--bs-success-rgb));
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sansita Swashed", system-ui;
+}
+
+#Home .carousel-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title {
+    margin-bottom: 35px;
+}
+
+.title h3 {
+    color: white;
+    font-size: 40px;
+}
+
+footer {
+    background-color: #333;
+    border: none;
+}
