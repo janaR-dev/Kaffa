@@ -288,6 +288,7 @@
 
 #About .container .cards .row .item .AboutCard {
     position: relative;
+    height: 460px;
 }
 
 #About .container .cards .row .item .AboutCard .front {
@@ -434,8 +435,12 @@
     animation-direction: alternate;
 }
 
-#Menu .nav-tabs {
-    width: fit-content;
+#Menu .cover {
+    overflow: auto;
+}
+
+#Menu .cover .nav-tabs {
+    width: max-content;
 }
 
 #Menu .nav-tabs .nav-link {

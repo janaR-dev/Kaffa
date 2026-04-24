@@ -1,4 +1,89 @@
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+    #Home .navbar .navbar-collapse {
+        padding-block: 15px;
+        margin-top: 25px;
+        border-radius: 15px;
+    }
+    #Home .navbar .navbar-collapse .navbar-nav {
+        display: block;
+        text-align: center;
+    }
+    #Home .navbar .navbar-collapse .nav-link .middle-text {
+        width: 100%;
+        display: block;
+        height: 17px;
+        background-color: rgba(var(--bs-success-rgb));
+        top: 50%;
+        left: 100%;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: 1;
+        transition-duration: 1s;
+    }
+    #Home .navbar .navbar-collapse a {
+        border-radius: 10px;
+    }
+    #Home .navbar .container {
+        padding-inline: 25px;
+        position: relative;
+    }
+    #Home .navbar .container .navbar-brand {
+        position: relative;
+        width: 22%;
+    }
+    #Home .carousel-item .caption1 h3 {
+        font-size: 30px;
+    }
+    #Home .carousel-item .caption1 p {
+        font-weight: 230;
+        width: 90%;
+    }
+    #About .container .row .about p {
+        font-size: 15px;
+    }
+    #About .container .row .about h2 {
+        font-size: 45px;
+    }
+    #About .container .cards .item {
+        margin: auto;
+        width: 60%;
+        margin-block: 15px;
+    }
+    #Services .SerPart2 .item {
+        width: 70%;
+        margin: auto;
+        margin-block: 25px;
+    }
+    #Services .SerPart3 .item .col-2 {
+        order: 1;
+    }
+    #Services .SerPart3 .item .col-10 {
+        order: 2;
+    }
+    #Menu .tab-content .col-lg-3 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #Video h3 {
+        font-size: 40px;
+    }
+    #Video h2 {
+        font-size: 45px;
+    }
+    #Video a i {
+        font-size: 80px;
+    }
+    #Book .content {
+        background-image: none;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+    #Book form {
+        width: 90%;
+        margin: 0px;
+    }
+}
 
 @media (min-width: 371px) and (max-width: 992px) {
     #Home .navbar .navbar-collapse {
@@ -31,13 +116,115 @@
     }
     #Home .navbar .container .navbar-brand {
         position: relative;
-        width: 10%;
+        width: 22%;
+    }
+    #Home .carousel-item .caption1 h3 {
+        font-size: 30px;
+    }
+    #Home .carousel-item .caption1 p {
+        font-weight: 230;
+        width: 90%;
+    }
+    #About .container .row .about p {
+        font-size: 15px;
+    }
+    #About .container .row .about h2 {
+        font-size: 45px;
+    }
+    #About .container .cards .item {
+        margin: auto;
+        width: 70%;
+        margin-block: 15px;
+    }
+    #Services .SerPart2 .item {
+        width: 70%;
+        margin: auto;
+        margin-block: 25px;
+    }
+    #Services .SerPart3 .item .col-2 {
+        order: 1;
+    }
+    #Services .SerPart3 .item .col-10 {
+        order: 2;
+    }
+    #Menu .tab-content .col-lg-3 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #Video h3 {
+        font-size: 40px;
+    }
+    #Video h2 {
+        font-size: 45px;
+    }
+    #Video a i {
+        font-size: 80px;
+    }
+    #Book .content {
+        background-image: none;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+    #Book form {
+        width: 90%;
+        margin: 0px;
+        left: 5%;
+        position: relative;
     }
 }
 
-@media (min-width: 577px) and (max-width: 1300px) {}
+@media (min-width: 577px) and (max-width: 1300px) {
+    #Home .carousel-item .caption1 h3 {
+        font-size: 40px;
+    }
+    #Home .carousel-item .caption1 p {
+        font-weight: 250;
+        width: 90%;
+    }
+    #About .container .cards .item {
+        margin: auto;
+        width: 50%;
+        margin-block: 16px;
+    }
+    #Menu .tab-content .col-lg-3 {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
 
-@media (min-width: 769px) and (max-width: 992px) {}
+@media (min-width: 769px) and (max-width: 992px) {
+    #Home .carousel-item .caption1 h3 {
+        font-size: 50px;
+    }
+    #About .container .cards .item {
+        margin: auto;
+        width: calc(100%/3);
+        margin-block: 16px;
+        padding-inline: 5px;
+    }
+    #Services .SerPart2 .item {
+        width: 50%;
+        margin: auto;
+        margin-block: 25px;
+    }
+    #Book .content {
+        background-image: url("images_Kaffa/images/girl.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: left bottom;
+        min-height: 60vh;
+    }
+    #Book form {
+        background-image: url("images_Kaffa/images/leaves_pattern.png");
+        background-color: rgba(var(--bs-success-rgb));
+        border-radius: 10px;
+        margin-left: auto;
+        width: 50%;
+        left: auto;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1300px) {
     #Home .navbar .navbar-collapse {
@@ -49,6 +236,69 @@
     #Home .navbar .navbar-collapse .nav-item:not(:last-child) .nav-link {
         margin-right: 20px;
     }
+    #Home .navbar .navbar-collapse .navbar-nav {
+        display: flex;
+        text-align: center;
+    }
+    #Home .carousel-item .caption1 h3 {
+        font-size: 50px;
+    }
+    #Home .carousel-item .caption1 p {
+        font-family: "Oswald", sans-serif;
+        color: #ffffff;
+        font-weight: 250;
+        width: 85%;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+    #About .container .cards .item {
+        margin: auto;
+        width: calc(100%/3);
+        margin-block: 10px;
+        padding: 10px;
+    }
+    #Services .SerPart2 .item {
+        width: 100%;
+        margin: auto;
+        margin-block: 25px;
+    }
+    #Menu .tab-content .col-lg-3 {
+        width: calc(100%/3);
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    #Video h3 {
+        font-size: 50px;
+        text-shadow: 1.5px 1.5px 1px #362d27;
+    }
+    #Video h2 {
+        font-size: 55px;
+        margin-block: 20px;
+    }
+    #Video a i {
+        font-size: 100px;
+    }
+    #Book .content {
+        background-image: url("images_Kaffa/images/girl.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: left bottom;
+        min-height: 60vh;
+    }
+    #Book form {
+        background-image: url("images_Kaffa/images/leaves_pattern.png");
+        background-color: rgba(var(--bs-success-rgb));
+        border-radius: 10px;
+        margin-left: auto;
+        width: 50%;
+        left: auto;
+    }
 }
 
-@media (min-width: 1181px) and (max-width: 1300px) {}
+@media (min-width: 1181px) and (max-width: 1300px) {
+    #Menu .tab-content .col-lg-3 {
+        width: calc(100%/4);
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+}
